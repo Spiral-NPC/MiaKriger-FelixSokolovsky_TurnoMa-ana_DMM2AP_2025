@@ -1,0 +1,580 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+ font-family: 'Comic Neue', sans-serif;
+ background-color: #000836;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Luckiest Guy', cursive;
+ letter-spacing: 1px;  
+}
+
+#logo {
+   background-color: #0e0f43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color:#478cd8;
+   
+    padding: 10px 0;
+        overflow: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1c1616;
+    padding: 5px 15px;
+    transition: 0.3s;
+     font-family: 'luckiest guy', cursive;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: #ffee73;
+}
+
+#banner {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#texto-banner {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #ffee73;
+ box-shadow: 10px 10px 0 #9b1a1a;
+ padding: 20px;
+
+}
+
+#Dimension {
+    background-image: url('img/fondo.png'); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 60px 30px;          
+    color: #1c1616;              
+}
+
+.flex-secundaria {
+    display: block; 
+    padding: 60px 30px;
+    background-color: rgba(71,140,216,0.8); 
+    color: #1c1616;
+    text-align: center; 
+}
+
+#Dimension h2 {
+    font-family: 'luckiest guy', cursive; 
+    font-size: 36px; 
+    margin-bottom: 20px; 
+    background-color: #478cd8;
+    box-shadow: 5px 5px 0 #ffee73; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    color: #1c1616;
+
+}
+
+.texto-secundaria p {
+    font-size: 18px; 
+    margin-bottom: 20px; 
+   color: rgb(212, 212, 212);
+}
+
+
+.imagen-secundaria {
+    max-width: 900px;
+    margin: 0 auto 20px auto; 
+}
+
+.imagen-secundaria img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.texto-secundaria {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+   color: rgb(212, 212, 212);
+}
+
+
+
+.contenido-escondido {
+  margin-top: 10px;
+  display: block;  
+}
+
+.contenido-escondido p {
+  margin-top: 10px;
+}
+
+#ch {
+    display: none;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+#ch:checked ~ .contenido-escondido {
+    display: block;
+}
+
+.contenido-escondido{
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'luckiest guy', cursive;
+    font-size: 20px;
+    color: #1c1616;
+    background-color: #ffee73;
+    box-shadow: 5px 5px 0 #f85c5c; 
+    padding: 3px 13px;
+    margin-top: 12px;
+}
+
+.fondo-ciudad {
+  position: relative;
+  background: url("img/bg!.png") no-repeat center center/cover;
+  min-height: 80vh;          
+  display: flex;
+  align-items: center;          
+  justify-content: flex-end;    
+  padding: 50px;
+  color: #fff;
+}
+
+.texto-ciudad {
+  max-width: 900px;
+  font-family: 'Comic Neue', sans-serif;
+  color: rgb(212, 212, 212);
+  background-color: #0b1220a6;
+
+}
+
+.texto-ciudad h2 {
+    font-family: 'luckiest guy', cursive; 
+    font-size: 36px; 
+    margin-bottom: 20px; 
+    background-color: #f85c5c;
+    box-shadow: 5px 5px 0 #478cd8 ;
+    padding: 10px 20px; 
+    display: inline-block; 
+    color: #1c1616;
+
+}
+
+
+#ch-ciu {
+    display: none;
+}
+
+#ch-ciu:checked ~ .contenido-escondido2 {
+    display: block;
+}
+
+#ch-ciu:checked ~ label {
+    display: none;
+}
+
+
+.contenido-escondido2 {
+    margin-top: 10px;
+    display: none;  
+}
+
+.contenido-escondido2 p {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'luckiest guy', cursive;
+    font-size: 20px;
+    color: #1c1616;
+    background-color: #ffee73;
+    box-shadow: 5px 5px 0 #f85c5c; 
+    padding: 3px 13px;
+    margin-top: 12px;
+}
+
+#Protas{
+ background: url("img/fondo2.png") no-repeat center center/cover;
+}
+#title-protas{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 18px auto; 
+  max-width: fit-content;
+  font-size: 24px;              
+  color: #1c1616;             
+  background: #ffee73;   
+  padding: 8px 14px;            
+  box-shadow: 10px 10px 0 #478cd8;
+  margin-top: 1.7%;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 20px; 
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  overflow: hidden;
+ box-shadow: 5px 5px 0 #ffee73 ;
+}
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-back {
+  background: #478cd8;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+.card-back h3 {
+  margin-bottom: 10px;
+}
+.card-back p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+#Protagonistas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;      
+  flex-wrap: wrap;  
+  max-width: 900px; 
+  margin:0 auto;
+}
+
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  --radius: 12px;
+  --time-color: #9ca3af;
+  --border: #e6e9ef;
+  --max-width: 760px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+.comments-header {
+    display: flex;
+    justify-content: center;   /* 🔹 centrado */
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto 18px auto; 
+    font-size: 24px;              
+    color: #1c1616;             
+    background: #ffee73;   
+    padding: 8px 14px;            
+    box-shadow: 10px 10px 0 #478cd8;
+}
+
+#fandom {
+  max-width: 100%;     
+  padding: 0 20px;     
+}
+
+.comments-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px;
+  max-width: 1000px;   
+  margin: 0 auto;      
+}
+
+
+.comments-header .meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.comment-card {
+  display: flex;
+  gap: 14px;
+  background: var(--card);
+  padding: 14px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(0,0,0,0.04);
+  flex-shrink: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.comment-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.username-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+
+.meta-row {
+  color: var(--time-color);
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+.text {
+  font-size: 15px;
+  line-height: 1.45;
+  color: #0b1220;
+  margin: 8px 0 10px 0;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-like:hover {
+  background: linear-gradient(180deg,rgba(37,99,235,0.04),transparent);
+}
+
+.dots {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+#footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #0e0f43;
+  color: #bbcbd7;
+  text-align: center;
+  overflow: hidden;
+}
+
+.info-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.datos-personales {
+  text-align: left;
+}
+
+.redes-sociales a img {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+#contenedor {
+  max-width: 1200px;
+  min-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 820px) {
+
+#logo img {
+    max-width: 150px;
+}
+  nav{
+    font-size: 15px;
+  }
+  #footer{
+    font-size: 20px;
+  }
+  .texto-ciudad p{
+   font-size: 28px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.texto-secundaria p{
+  font-size: 26px;
+}
+
+}
+@media (min-width:320px) and (max-width:520px){
+#logo img {
+    max-width: 90px;
+}
+nav {
+    display: none;
+}
+  #banner {
+        height: 300px;
+    }
+ #texto-banner{
+  width: 250px;
+ }
+ #texto-banner h1 {
+        font-size: 24px;
+    }
+  #texto-banner p{
+    font-size: 13px;
+  }
+    .flex-secundaria, .flex-ciudad {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    .imagen-secundaria, .imagen-ciudad {
+        justify-content: center;
+        max-width: 80%;
+    }
+   
+  .avatar{width:46px;height:46px;}
+  .username{font-size:14px;}
+
+.comments-wrap {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;  
+  padding: 0 16px;  
+  clear: both; 
+}
+.texto-secundaria h2{
+  font-size: 20px;
+}
+.texto-secundaria p{
+  font-size: 14.5px;
+}
+.texto-ciudad h2{
+  font-size: 20px;
+}
+.texto-ciudad p{
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.comments-wrap {
+    grid-template-columns: 1fr;
+  }
+.info-footer{
+  font-size: 14px;
+ }
+}
+
+
